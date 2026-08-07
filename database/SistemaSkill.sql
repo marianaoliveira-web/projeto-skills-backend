@@ -3,13 +3,13 @@ CREATE SEQUENCE seq_skill START 1;
 CREATE SEQUENCE seq_usuario_skill START 1;
 
 CREATE TABLE usuario (
-    id_usuario INT PRIMARY KEY DEFAULT nextval('seq_usuario'),
+    id_usuario INTEGER PRIMARY KEY DEFAULT nextval('seq_usuario'),
     login VARCHAR(100) UNIQUE NOT NULL,
     senha VARCHAR(255) NOT NULL
 );
 
 CREATE TABLE skill (
-    id_skill INT PRIMARY KEY DEFAULT nextval('seq_skill'),
+    id_skill INTEGER PRIMARY KEY DEFAULT nextval('seq_skill'),
     nome VARCHAR(100) NOT NULL,
     versao VARCHAR(50),
     descricao TEXT,
@@ -17,7 +17,7 @@ CREATE TABLE skill (
 );
 
 CREATE TABLE usuario_skill (
-    id_usuario_skill INT PRIMARY KEY DEFAULT nextval('seq_usuario_skill'),
+    id_usuario_skill INTEGER PRIMARY KEY DEFAULT nextval('seq_usuario_skill'),
     id_usuario INTEGER NOT NULL,
     id_skill INTEGER NOT NULL,
     level INTEGER NOT NULL,
