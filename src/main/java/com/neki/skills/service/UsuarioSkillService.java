@@ -24,6 +24,15 @@ public class UsuarioSkillService {
         return usuarioSkillRepository.save(usuarioSkill);
     }
 
+    public UsuarioSkill atualizarLevel(Integer id, UsuarioSkill usuarioSkillAtualizada) {
+        return usuarioSkillRepository.findById(id).map(skillExistente -> {
+            skillExistente.setLevel(usuarioSkillAtualizada.getLevel());
+
+            return usuarioSkillRepository.save(skillExistente);
+
+        }).orElseThrow(() -> new RuntimeException("Associação de Skill não encontrada!"));
+    }
+
     public void removerAssociacao(Integer id) {
         usuarioSkillRepository.deleteById(id);
     }
