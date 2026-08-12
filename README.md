@@ -71,6 +71,12 @@ api.security.token.secret=S3nh4SuperS3cr3t4D0Pr0jet0Skills2026!
 
 ```
 
+> 💡 **Nota importante (Banco de Dados):** > Para que você consiga testar o sistema com dados reais imediatamente, certifique-se de executar o script localizado na pasta `database/SistemaSkill.sql` no seu SGBD (ex: DBeaver ou pgAdmin).  
+>  
+> Esse script é responsável por:
+> - Criar todas as tabelas e sequências do sistema (`usuario`, `skill` e `usuario_skill`).
+> - Popular o catálogo inicial com as **Skills padrão** (React, Java, Spring Boot, Python e PostgreSQL), incluindo suas versões e logos oficiais.
+
 
 4. **Inicie a Aplicação**
 Você pode rodar o projeto diretamente através da sua IDE (VS Code, IntelliJ, Eclipse) executando a classe `SkillsApplication.java`, ou via terminal na pasta raiz:
