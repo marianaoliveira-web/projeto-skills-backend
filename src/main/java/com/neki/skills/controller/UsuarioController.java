@@ -10,7 +10,8 @@ import com.neki.skills.model.Usuario;
 import com.neki.skills.service.UsuarioService;
 
 @RestController
-@RequestMapping("/usuarios")
+@RequestMapping("/usuario")
+@CrossOrigin("*")
 public class UsuarioController {
     
     private final UsuarioService usuarioService;
