@@ -95,7 +95,7 @@ A aplicação estará disponível em: `http://localhost:8080`
 
 | Método | Rota | Descrição | Acesso |
 | --- | --- | --- | --- |
-| `POST` | `/usuarios/cadastrar` | Registra um novo usuário no sistema. | Público |
+| `POST` | `/usuario/cadastrar` | Registra um novo usuário no sistema. | Público |
 | `POST` | `/auth/login` | Autentica o usuário e devolve o Token JWT. | Público |
 | `GET` | `/skills` | Lista todas as skills do catálogo disponíveis. | Privado (JWT) |
 | `GET` | `/usuario-skills/usuario/{id}` | Lista as skills associadas a um usuário. | Privado (JWT) |
