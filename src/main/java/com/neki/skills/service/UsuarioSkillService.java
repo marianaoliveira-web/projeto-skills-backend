@@ -75,6 +75,7 @@ public class UsuarioSkillService {
             usuarioSkill.getUsuario().getIdUsuario(),
             usuarioSkill.getSkill().getIdSkill(),
             usuarioSkill.getSkill().getNome(),
+            usuarioSkill.getSkill().getDescricao(),
             usuarioSkill.getSkill().getImagemUrl(),
             usuarioSkill.getLevel()
         );
