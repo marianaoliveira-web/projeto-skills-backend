@@ -29,8 +29,8 @@ O projeto foi rigorosamente estruturado com base no **Princípio da Responsabili
 * **`controller`**: Endpoints e exposição da API REST.
 * **`security`**: Lógica de proteção de rotas (Filtros), geração e validação de Tokens JWT.
 
-> 💡 **Nota de Arquitetura (Swagger vs Spring Fox):** > O requisito nº 8 do PDF solicitava a utilização da biblioteca `Spring Fox` para a geração da documentação Swagger. No entanto, o Spring Fox foi descontinuado e não recebe atualizações desde 2020, sendo incompatível com as versões modernas do ecossistema Spring (Spring Boot 3+ e Java 17+), que migraram do namespace `javax` para `jakarta`. 
-> Para garantir a segurança, modernidade e o funcionamento do projeto, optei por utilizar a biblioteca oficial e atualizada **`springdoc-openapi`**, que atende perfeitamente ao objetivo de gerar a interface do Swagger UI automaticamente.
+> 💡 ***Nota de Arquitetura*** — Spring Fox x springdoc-openapi:
+O requisito nº 8 do desafio solicita o uso do Spring Fox para geração automática da documentação Swagger. Entretanto, devido à incompatibilidade do Spring Fox com versões atuais do ecossistema Spring e à migração do stack moderno para jakarta, optei por utilizar o springdoc-openapi, solução atual para integração com OpenAPI 3 e Swagger UI. A escolha mantém o objetivo funcional do requisito — documentação automática e interface Swagger para os endpoints — utilizando uma biblioteca compatível com versões modernas do Spring Boot.
 
 ---
 
